@@ -81,7 +81,7 @@ namespace WebApplication1.Controllers
         }
 
         #endregion
-
+        #region 查詢
         [HttpPost("GetMyOffice_ACPD")]
         public IActionResult GetMyOffice_ACPD(MyOfficeQueryModel query)
         {
@@ -117,7 +117,8 @@ namespace WebApplication1.Controllers
                 }
             }
         }
-
+        #endregion
+        #region 插入
         [HttpPost("InsertMyOffice_ACPD")]
         public IActionResult InsertMyOffice_ACPD(MyOfficeInsertModel data)
         {
@@ -163,7 +164,8 @@ namespace WebApplication1.Controllers
                 }
             }
         }
-
+        #endregion
+        #region 更改
         [HttpPut("UpdateMyOffice_ACPD")]
         public IActionResult UpdateMyOffice_ACPD(MyOfficeUpdateModel data)
         {
@@ -211,7 +213,8 @@ namespace WebApplication1.Controllers
                 }
             }
         }
-
+        #endregion
+        #region 刪除(尚未完成)
         [HttpDelete("UpdateMyOffice_ACPD")]
         public IActionResult DeleteMyOffice_ACPD(MyOfficeDeleteModel data)
         {
@@ -259,6 +262,6 @@ namespace WebApplication1.Controllers
                 }
             }
         }
-
+        #endregion
     }
 }
